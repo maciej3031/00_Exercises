@@ -1,4 +1,4 @@
-S = "1A 1E 1J"
+S = "1A 1B 1E 1J"
 import itertools
 
 
@@ -33,10 +33,11 @@ def solution(N, S):
 
     S = S.split(' ')
     array = get_list_of_rows_with_seats_as_only_chars(N, S)
+    print(array)
     number = count_occurrences(array)
     return number
 
 
-print(solution(1, S))
+print(solution(3, S))
 
 
